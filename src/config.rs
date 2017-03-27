@@ -340,7 +340,7 @@ create_config! {
         "Lines to format; this is not supported in rustfmt.toml, and can only be specified \
          via the --file-lines option";
     max_width: usize, 100, "Maximum width of each line";
-    error_on_line_overflow: bool, true, "Error if unable to get all lines within max_width";
+    error_on_line_overflow: bool, false, "Error if unable to get all lines within max_width";
     tab_spaces: usize, 4, "Number of spaces per tab";
     fn_call_width: usize, 60,
         "Maximum width of the args of a function call before falling back to vertical formatting";
